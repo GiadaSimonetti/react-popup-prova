@@ -16,8 +16,12 @@ class App extends Component {
         <p className="App-intro">
           To see the div click the button.
         </p>
-        <Popup trigger={<button> Click here</button>} position="bottom center">
-          <div>I AM A DIV</div>
+        <Popup
+          trigger={<button className="button"> Open Modal </button>}
+          modal
+          closeOnDocumentClick
+        >
+          <span> Modal content </span>
         </Popup>
       </div>
     );
