@@ -1,9 +1,9 @@
-// import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 import React, { Component } from "react";
 import Popup from "reactjs-popup";
+import PopUp from "./PopUp";
 
 class App extends Component {
   render() {
@@ -16,9 +16,8 @@ class App extends Component {
         <p className="App-intro">
           To see the div click the button.
         </p>
-        <Popup trigger={<button> Click here</button>} position="bottom center">
-          <div>I AM A DIV</div>
-        </Popup>
+
+        <PopUp />
       </div>
     );
   }
