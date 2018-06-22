@@ -16,9 +16,15 @@ class App extends Component {
         <p className="App-intro">
           To see the div click the button.
         </p>
-        <Popup trigger={<button> Click here</button>} position="bottom center">
-          <div>I AM A DIV</div>
-        </Popup>
+        <Popup
+            trigger={open => (
+              <button className="button">Trigger - {open ? "Opened" : "Closed"}</button>
+            )}
+            position="right center"
+            closeOnDocumentClick
+          >
+            <span> popup content </span>
+          </Popup>
       </div>
     );
   }
